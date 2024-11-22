@@ -3,6 +3,6 @@ import auth from '../config/auth.js';
 import principal from '../controller/principal.js';
 const principalroute = express.Router();
 
-principalroute.get('/',principal);
+principalroute.get('/',auth['principal'],principal);
 
 export default principalroute;
